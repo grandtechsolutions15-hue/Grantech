@@ -1,13 +1,12 @@
 // ===== FIREBASE CONFIGURATION =====
-// Replace these values with your Firebase project credentials
-
 const firebaseConfig = {
-    apiKey: "YOUR_FIREBASE_API_KEY",
-    authDomain: "your-project.firebaseapp.com",
-    projectId: "your-firebase-project-id",
-    storageBucket: "your-project.appspot.com",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "1:YOUR_APP_ID:web:YOUR_WEB_APP_ID"
+    apiKey: "AIzaSyDjmZs43YP29UbX6fByixnU0yFJstFaJtw",
+    authDomain: "everness-mfi.firebaseapp.com",
+    databaseURL: "https://everness-mfi-default-rtdb.firebaseio.com",
+    projectId: "everness-mfi",
+    storageBucket: "everness-mfi.firebasestorage.app",
+    messagingSenderId: "740108285906",
+    appId: "1:740108285906:web:c0b9ab47f46a0c55173a0b"
 };
 
 // ===== FIREBASE INITIALIZATION =====
