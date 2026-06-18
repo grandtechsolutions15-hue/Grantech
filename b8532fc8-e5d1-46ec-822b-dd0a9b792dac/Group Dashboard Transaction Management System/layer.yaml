@@ -1,0 +1,965 @@
+id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+name: Group Dashboard Transaction Management System
+type: 1
+canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+blocks:
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: 'Applies features 3 & 4 to an HTML interface: adds monthly savings/registration
+    collection summary with refresh controls, replaces single transaction type input
+    with separate savings/registration/loan amount fields, and updates transaction
+    history table to show collection breakdowns instead of combined totals.'
+  height: 1000
+  id: 05c9dd7c-629d-4cd2-8a6b-95cbc5bd68cb
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Apply Features 3-6 and New JS Functions
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 14000
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Replace HTML features using index-based slicing to locate and update
+    card elements (Reports, Admin, Officer sections) while avoiding whitespace matching
+    issues.
+  height: 1000
+  id: 09c2d305-0f2a-4c31-a0cc-74fbb5fa531c
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Use Index-Based Replacement for All Remaining Features
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 19600
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Locates and extracts key HTML sections (login tabs and group login
+    form) for inspection and modification.
+  height: 1000
+  id: 1020b194-f127-41cd-8ff8-6b4cc7e52088
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Extract Key Sections
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 0
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Verifies an HTML file exists, displays its metadata, and provides mobile/desktop
+    instructions for accessing and downloading the file via Telegram, desktop browser,
+    or data URI.
+  height: 1000
+  id: 1c4341b4-db6e-45e9-b99b-1fe47ca4d569
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Send File to User via Email Link
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 8000
+  y: 36400
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Extracts and displays the complete renderGroupView function from HTML
+    content, isolating the full function definition including its internal logic and
+    associated modal handling code.
+  height: 1000
+  id: 2934b583-d76f-48f0-ab71-e91a432c9093
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Extract renderGroupView Full and Pending Modal
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 8400
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Extracts and displays specific HTML/JavaScript sections from a web
+    page, including renderGroupView history logic, group transaction type selector,
+    and admin groups table structure for code analysis.
+  height: 1000
+  id: 2ae8922f-6091-4e90-bb86-2bc51645efcc
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Extract More Function Details
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 4200
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: "Extracts and displays exact HTML segments from a page\u2014the Reports\
+    \ card section, group transaction form field, and transaction history table header\u2014\
+    for verification or debugging purposes."
+  height: 1000
+  id: 2b5970ef-27ea-4d94-ac1d-f80cbf542ffa
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Get Exact Reports Card and Transaction Form
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 18200
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Extracts and displays HTML structure of group history table header,
+    officer report section, and section boundaries to map locations for adding filters
+    and monthly summaries.
+  height: 1000
+  id: 339f8fef-8b2e-4afb-ad0d-f1554c578e84
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Get Group History Table Header and Officer Report Date Filter
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 12600
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Injects custom JavaScript functions and modal dialogs into HTML file,
+    enables admin transaction editing/approval workflows and monthly collection summaries,
+    then validates all feature implementations are present.
+  height: 1000
+  id: 3d39de60-a07e-48dd-983b-a1fd42dc9890
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Inject JS and Add Modal and Save File
+  parent_id: null
+  properties: {}
+  status: 4
+  type: 1
+  variables: null
+  width: 1600
+  x: 8000
+  y: 35000
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Inspects and debugs HTML markup for group transaction history headers
+    and admin group rendering functions to verify feature implementations.
+  height: 1000
+  id: 44043998-d6c4-445b-98f4-dce14f3b8cdc
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Fix History Header and Add All New JS Functions
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 25200
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Reads an HTML file into memory and reports its size in characters and
+    line count for inspection or processing.
+  height: 1000
+  id: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Load HTML File
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 0
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Extracts and displays key JavaScript functions from HTML content including
+    officer group rendering, member viewing, PDF report generation, and transaction
+    history display functionality.
+  height: 1000
+  id: 4e56be85-8ae4-4b74-b34a-2337b3273f6f
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Extract Officer Report and More Functions
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 7000
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Encodes an HTML file to base64 and creates a download helper page with
+    instructions for sharing the file via data URI on mobile devices.
+  height: 1000
+  id: 4fa3d884-03b6-453a-8b26-043a8872fa7d
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Complete Final Assembly and Save HTML File
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 32200
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: 'Diagnoses and prepares fixes for two remaining bugs: F2 confirmDenyPending
+    function missing showReason parameter and F6 renderOfficerLoanApps function missing
+    clickable officer loan rows. Inspects current HTML code state to identify exact
+    issues before applying corrections.'
+  height: 1000
+  id: 568f023b-17a4-49a5-b74d-93f70865810b
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Fix Remaining 2 Issues and Add All JS Functions
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 32200
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Enhances UI with "View Group" buttons for admin/officer views, converts
+    loan IDs to clickable links for detail modals, and adds savings/registration/loan
+    amount breakdown to transaction history rows.
+  height: 1000
+  id: 56a1d41c-e4db-4887-8f8d-2d5b34abcb5d
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Add View Group Button and Finalize All JS Functions
+  parent_id: null
+  properties: {}
+  status: 4
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 26600
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Merges previously prepared HTML with integrated JavaScript functions
+    to construct final web page. Adds View Group button and supporting scripts for
+    dynamic group management.
+  height: 1000
+  id: 5c5891ce-beaf-4d8c-bb3e-ea14d514d992
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Build Final HTML with All JS Functions
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 30800
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Extracts and displays key JavaScript function bodies (approvePending,
+    recordGroupTransaction, renderGroupView) from HTML content for code inspection
+    and analysis.
+  height: 1000
+  id: 5dd5d813-81c6-4887-a01e-2c9bd1726066
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Extract Functions Deep
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 2800
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Extracts the renderAdminGroups JavaScript function from HTML and prints
+    a snippet of its button markup to identify the exact delete button text.
+  height: 1000
+  id: 60cf78ac-3ce9-4ce7-84e5-4716a95674db
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Find renderAdminGroups Delete Button Exact Text
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 32200
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: 'Searches HTML content to locate and display key sections: loan generation
+    function, officer loan applications table, and group management view functions
+    for admin and officer roles.'
+  height: 1000
+  id: 61472cbf-0077-4204-a762-ec8ed99d425b
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Extract Loan and Officer Report Sections
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 5600
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Extracts and displays specific HTML sections from page content including
+    login tabs, group login form, transaction history table, and approve pending function
+    definition for debugging/analysis.
+  height: 1000
+  id: 6db4b79f-21a0-4d2d-b076-161ea125950c
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Extract More Sections
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 1400
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Extracts and locates the Reports card section in HTML to prepare for
+    adding a monthly collections summary feature with officer and date-range filtering
+    options.
+  height: 1000
+  id: 706dc0e0-6a50-4f9e-8e1e-f9d160e9f351
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Apply All Remaining Features to HTML
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 16800
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Debugs and fixes JavaScript string syntax issues in HTML template.
+    Locates admin group rendering function and identifies action button markup for
+    adding View Group functionality with proper quote escaping.
+  height: 1000
+  id: 755da04b-0cd2-4bfa-886c-483cb7fe9942
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Add View Group Button and JS Functions Fixed
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 28000
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: 'Extracts and displays two key JavaScript functions from HTML content:
+    the approvePending group transaction approval section and the renderOfficerLoanApps
+    function for rendering loan applications.'
+  height: 1000
+  id: 7ccb67b0-1d80-456b-bcd5-df4eaba9547b
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Get approvePending Group Section and renderOfficerLoanApps
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 11200
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Locates the Reports card section in HTML by searching for specific
+    text patterns. Displays the position and surrounding context, or tries alternate
+    search terms if the main pattern isn't found.
+  height: 1000
+  id: 8b5ef108-8661-4b5f-8847-cf2a62265c5f
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Find Exact Reports Card in html3
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 21000
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Extracts and displays the full renderGroupView function, admin-pending-table
+    HTML structure, and group transaction approval logic from approvePending to analyze
+    modal and transaction handling code.
+  height: 1000
+  id: 8c176cda-6098-44a4-b0a0-9224f7c4326c
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Get Full renderGroupView and Pending Modal HTML
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 9800
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: 'Apply targeted JavaScript fixes: add showReason parameter to deny
+    confirmation modal and make loan IDs clickable in officer loan apps view.'
+  height: 1000
+  id: 93d9fbbc-972a-42ce-bdaf-c1d81fd8b0fa
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Apply Final Two Fixes and All New JavaScript Functions
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 32200
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Locates and displays the exact HTML markup around the officer reports
+    card to diagnose whitespace/indentation issues preventing text replacements.
+  height: 1000
+  id: 971aed9a-bcd2-49cf-acb9-7fdc22d68cf7
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Debug Exact Whitespace in HTML
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 15400
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: 'Injects new JavaScript functions to handle 6 features: group transaction
+    previews with savings/registration/loan columns, monthly collection summaries,
+    and admin approval modals for editing and approving group transactions.'
+  height: 1000
+  id: accf38c6-cef3-4ae4-9301-d83eaaeac676
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Inject All New JavaScript Functions
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 8000
+  y: 32200
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Validates that 6 key HTML features (history status, edit/approve buttons,
+    monthly card, transaction inputs, officer login form, and loan details) are properly
+    implemented in the generated HTML output.
+  height: 1000
+  id: ae9f31b4-4107-4c3f-9785-a3f5add659a7
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: All HTML Changes Confirmed - Now Add New JS Functions
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 32200
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Validates that Feature 3 (monthly summary card + date filter) exists
+    in HTML and checks the status of all six features (history status columns, edit/approve
+    buttons, savings/loan columns, login tab removal, and officer loan headers) to
+    identify which need implementation.
+  height: 1000
+  id: b345e3d5-a891-4102-acf1-1de1e6ae9b84
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Confirm Feature 3 Already Applied and Fix Remaining Features
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 23800
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: 'Applies four major UI features to HTML: adds monthly collections summary
+    card with date-range reporting; restructures transaction form with separate Savings/Registration/Loan
+    fields; removes group login tab and makes officer tab default; adds loan ID generation
+    with clickable links in loan tables.'
+  height: 1000
+  id: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Apply All Remaining Features - Final
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 19600
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: 'Extracts and displays three JavaScript functions from HTML content:
+    renderOfficerLoanApps (renders officer loan applications), renderAdminAllLoans
+    (displays all loans for admin), and denyPending (handles loan denial logic).'
+  height: 1000
+  id: b947b8cb-f84d-4eaa-9190-51ea540592fc
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Get renderOfficerLoanApps and renderAdminAllLoans
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 12600
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: ''
+  height: 1000
+  id: b95355e4-7bc8-49de-a033-19aed701ee62
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: python_block
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 8000
+  y: 29400
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Locates and displays the admin pending table section from the HTML
+    code to enable feature implementation for edit & approve buttons.
+  height: 1000
+  id: ba578533-8489-4683-b076-0c0d03ed33ee
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Apply Feature 2a and Remaining Features
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 12600
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: 'Extracts and displays specific HTML sections from a document: the
+    updateOfficerReportPreview function, the Group Transaction form, and the Group
+    Transaction ID table header for analysis.'
+  height: 1000
+  id: c70407f3-9cca-4c2e-9580-55a73d1d9276
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Get updateOfficerReportPreview and Group Section HTML
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 12600
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: 'Extracts and displays JavaScript functions from HTML content: renderPendingTables
+    (complete), denyPending (first 1000 chars), and updateOfficerReportPreview to
+    analyze pending request handling and report preview logic.'
+  height: 1000
+  id: c7d81404-224d-420f-ac04-aec5f3d158a8
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Get denyPending and renderPendingTables
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 12600
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Searches HTML content to locate and inspect the exact structure of
+    the Reports card section, printing its position and surrounding context for debugging
+    purposes.
+  height: 1000
+  id: cd02e845-9846-4d54-93f6-b1837ad6bf2b
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Debug Remaining Failed Replacements
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 21000
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Locates optimal insertion points in JavaScript code by searching for
+    key markers (functions, delimiters, closing tags) to enable precise code injection.
+  height: 1000
+  id: d1519f24-fca5-4343-85f6-f790ddeb3228
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Find JS Insertion Point and Inject
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 8000
+  y: 33600
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Debugs Feature 2a by searching HTML content for a pending admin confirmation
+    function call and prints surrounding context to inspect the table row rendering.
+  height: 1000
+  id: d232aad0-da37-4bfa-93e4-1c70d2708201
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Debug Feature 2a Replacement
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 12600
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: 'Applies 6 HTML/JavaScript feature enhancements to a web application:
+    (1) adds Status column to group transaction history so approved & pending transactions
+    persist in dashboard; (2) adds "Edit & Approve" button for admin editing group
+    transactions before approval; (3) enhances deny functionality with optional reason
+    field; (4-6) handles additional modifications to transaction approval workflows.'
+  height: 1000
+  id: db7b920f-9747-4a37-859c-28d05af8f2ea
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Apply All 6 Feature Changes
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 12600
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Locates a specific HTML element by searching for 'fa-chart-bar' and
+    prints the surrounding context (300 chars before, 1000 chars after) to help identify
+    the reports card structure.
+  height: 1000
+  id: e6b09cc8-adce-4da9-bc2b-c3014a5eaab8
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Extract Exact Context from html3
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 22400
+- auto_size: false
+  canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  compute_settings: null
+  description: Extracts the renderAdminGroups() function from HTML to identify exact
+    button text labels used in the admin groups interface.
+  height: 1000
+  id: f8a8b8f7-5c61-4fac-8fcc-247dc6059703
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  name: Find Admin Groups Exact Button Text
+  parent_id: null
+  properties: {}
+  status: 4
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 29400
+edges:
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 09a22a70-6135-47b1-9579-41a9c1be68c7
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: 93d9fbbc-972a-42ce-bdaf-c1d81fd8b0fa
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 0e1c0748-c75c-4a9e-beb8-227dadafaa5e
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: f8a8b8f7-5c61-4fac-8fcc-247dc6059703
+  target: b95355e4-7bc8-49de-a033-19aed701ee62
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 102ddddb-3b83-4df9-883f-06ca6564ef09
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: 44043998-d6c4-445b-98f4-dce14f3b8cdc
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 12c2f0c3-366a-476c-badc-b5d9673cc541
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: c70407f3-9cca-4c2e-9580-55a73d1d9276
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 1f1f930e-5fc8-4a4d-afba-4e3dfb0973de
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: b947b8cb-f84d-4eaa-9190-51ea540592fc
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 234a9013-8484-4ce4-b56c-0c4aa7b91678
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: 339f8fef-8b2e-4afb-ad0d-f1554c578e84
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 275febff-648a-4d5a-9cb0-07be93a482d9
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: db7b920f-9747-4a37-859c-28d05af8f2ea
+  target: b76058f6-d311-4e83-9f5a-346c1c9962c2
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 29e3efc0-8d84-400c-88e7-c328d7503510
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: f8a8b8f7-5c61-4fac-8fcc-247dc6059703
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 2c4f00e4-65cd-47f2-8e5d-e5113d2164b5
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: db7b920f-9747-4a37-859c-28d05af8f2ea
+  target: 2b5970ef-27ea-4d94-ac1d-f80cbf542ffa
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 3104684d-4c48-4dcc-ab4c-72b4186b6912
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: 8c176cda-6098-44a4-b0a0-9224f7c4326c
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 36232bf3-dbd2-418b-af6b-d12973f72aec
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: db7b920f-9747-4a37-859c-28d05af8f2ea
+  target: 706dc0e0-6a50-4f9e-8e1e-f9d160e9f351
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 37e346ec-35de-405a-8a65-bc6727ce6169
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: db7b920f-9747-4a37-859c-28d05af8f2ea
+  target: ba578533-8489-4683-b076-0c0d03ed33ee
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 3d84e99e-3901-4400-9328-cfeb99d0cb48
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: 8b5ef108-8661-4b5f-8847-cf2a62265c5f
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 438e6dfb-67a8-469b-a125-cd85551e128a
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 93d9fbbc-972a-42ce-bdaf-c1d81fd8b0fa
+  target: d1519f24-fca5-4343-85f6-f790ddeb3228
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 4cd86137-a886-407f-b247-0746ca26cc75
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: 09c2d305-0f2a-4c31-a0cc-74fbb5fa531c
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 513dfbbc-40c4-41e2-adfd-a644f5d64010
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 93d9fbbc-972a-42ce-bdaf-c1d81fd8b0fa
+  target: accf38c6-cef3-4ae4-9301-d83eaaeac676
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 5dc15214-81e1-49a9-a26f-265f9f717715
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: b345e3d5-a891-4102-acf1-1de1e6ae9b84
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 66752e3b-1995-43ef-93dc-00aec0b8ea65
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: 4fa3d884-03b6-453a-8b26-043a8872fa7d
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 71aaa94f-d193-446c-aff2-187fa66e3701
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: d232aad0-da37-4bfa-93e4-1c70d2708201
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 7595f638-0d19-46fe-ba22-6873a306c365
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: 7ccb67b0-1d80-456b-bcd5-df4eaba9547b
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 7c597942-fbab-4f82-b3da-7e76a94ebd7e
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: e6b09cc8-adce-4da9-bc2b-c3014a5eaab8
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 81372cc3-70a1-44fc-873e-e27e4acada0d
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: 755da04b-0cd2-4bfa-886c-483cb7fe9942
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 8914cf2d-8ccd-4e12-9097-ee541e653a00
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: 61472cbf-0077-4204-a762-ec8ed99d425b
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 9127dc90-d8c0-48bd-89b7-aa322a49d537
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: 5c5891ce-beaf-4d8c-bb3e-ea14d514d992
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: 95a340de-e6e3-44ae-8b31-9967afe4ad56
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: 2ae8922f-6091-4e90-bb86-2bc51645efcc
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: b6f238be-4ec5-4dca-8d6d-66cc22ab4b06
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: 568f023b-17a4-49a5-b74d-93f70865810b
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: b8bad0a0-f8ae-4377-b3a6-e5b97e70c3c7
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 93d9fbbc-972a-42ce-bdaf-c1d81fd8b0fa
+  target: 3d39de60-a07e-48dd-983b-a1fd42dc9890
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: c5ccfd0b-e003-4cd5-8766-abfda8a77ef7
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: 5dd5d813-81c6-4887-a01e-2c9bd1726066
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: c641f239-67ba-40c9-8c6d-6e0d5f301ba2
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: db7b920f-9747-4a37-859c-28d05af8f2ea
+  target: 971aed9a-bcd2-49cf-acb9-7fdc22d68cf7
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: cbe43f80-0339-4f3f-861e-ae30ce3e5939
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: 6db4b79f-21a0-4d2d-b076-161ea125950c
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: ce10d786-010c-4c7e-9f45-f59e10a81720
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: c7d81404-224d-420f-ac04-aec5f3d158a8
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: dd6a3124-e9f4-482c-beb8-8957f98a230e
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: 60cf78ac-3ce9-4ce7-84e5-4716a95674db
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: ddc69d45-7a2c-4548-8e86-2b7b8e696750
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: db7b920f-9747-4a37-859c-28d05af8f2ea
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: e0ae9ba9-db88-46ce-89e1-83a73295b49a
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: 4e56be85-8ae4-4b74-b34a-2337b3273f6f
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: e1eda567-69e1-469a-843c-b75097744574
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: db7b920f-9747-4a37-859c-28d05af8f2ea
+  target: 09c2d305-0f2a-4c31-a0cc-74fbb5fa531c
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: e6040863-622f-4db9-8d3a-2facaad37c9d
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: db7b920f-9747-4a37-859c-28d05af8f2ea
+  target: 05c9dd7c-629d-4cd2-8a6b-95cbc5bd68cb
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: e61c528e-1514-45d3-bc30-838ce0e1e1f9
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: db7b920f-9747-4a37-859c-28d05af8f2ea
+  target: cd02e845-9846-4d54-93f6-b1837ad6bf2b
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: eb563cf1-459a-4916-a2f0-6b71b630b0be
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 4fa3d884-03b6-453a-8b26-043a8872fa7d
+  target: 1c4341b4-db6e-45e9-b99b-1fe47ca4d569
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: ed1e1ff2-db08-4b53-b684-1ab722117cb2
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: 2934b583-d76f-48f0-ab71-e91a432c9093
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: ef07cd5b-fb5a-4006-861b-a0d30b935dd1
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: 49c451d6-f9cb-4bc6-930a-ae20f2e7022a
+  target: 1020b194-f127-41cd-8ff8-6b4cc7e52088
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: f95bc047-cb27-42ee-9643-c359c9d941bb
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: ae9f31b4-4107-4c3f-9785-a3f5add659a7
+- canvas_id: b8532fc8-e5d1-46ec-822b-dd0a9b792dac
+  id: fa31d7fc-7d26-464a-b4ab-373a87ba0fff
+  layer_id: 4bf3ea71-3699-47af-8a9d-0b9edf81fb30
+  source: b76058f6-d311-4e83-9f5a-346c1c9962c2
+  target: 56a1d41c-e4db-4887-8f8d-2d5b34abcb5d
